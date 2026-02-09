@@ -1,0 +1,8 @@
+package com.saki.java.chapter06.weekday;
+
+public class Week {
+
+    public enum Weekday {
+        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+    }
+}
