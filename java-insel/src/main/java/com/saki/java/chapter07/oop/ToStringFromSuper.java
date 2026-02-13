@@ -9,7 +9,9 @@ public class ToStringFromSuper {
 	
 	public static void main(String[] args) {
 		new ToStringFromSuper();
-		System.out.println("sdfsdf");
+		ToStringFromSuper test = new ToStringFromSuper();
+
+		System.out.println(test.toString());
 		
 	}
 	

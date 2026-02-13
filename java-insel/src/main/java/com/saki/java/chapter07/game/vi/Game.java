@@ -30,8 +30,8 @@ public class Game {
 			if (input.matches("ende|bye|schluss|quit|finito|basta")) {
 				System.exit(0);
 			}
-			String simlifiedLine = input.replaceAll("benutze|stecke|nutze|mit|bei|unter|in", "");
-			StringTokenizer tokenizer = new StringTokenizer(simlifiedLine);
+			String simplifiedLine = input.replaceAll("benutze|stecke|nutze|mit|bei|unter|in", "");
+			StringTokenizer tokenizer = new StringTokenizer(simplifiedLine);
 			if (tokenizer.countTokens() < 2) {
 				System.out.println("Details bitte, '" + input + "' richt mir nicht!");
 			continue;

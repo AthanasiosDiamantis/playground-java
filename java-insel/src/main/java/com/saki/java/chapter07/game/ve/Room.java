@@ -9,6 +9,7 @@ public class Room extends GameObject {
 //		return String.format("%s[name = %s, size = %d]", getClass().getSimpleName(), name, size);
 //	}
 
+	@Override
 	public String toString() {
 		return super.toString() + "[ size=" + size + " ]";
 
