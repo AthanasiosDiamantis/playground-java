@@ -32,7 +32,8 @@ public class InstanceOfDemo {
 		System.out.println(go3 instanceof Object);
 		System.out.println(go3 instanceof Player);
 		System.out.println(go3 instanceof String);
-		
+
+//		System.out.println("Toll" instanceof StringBuilder); // Compiler tells: Inconvertible types; cannot cast 'java.lang.String' to 'java.lang.StringBuilder'
 
 	}
 
