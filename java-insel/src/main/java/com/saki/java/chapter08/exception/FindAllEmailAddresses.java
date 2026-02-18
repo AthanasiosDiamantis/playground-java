@@ -1,4 +1,4 @@
-package com.saki.java.chapter08;
+package com.saki.java.chapter08.exception;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

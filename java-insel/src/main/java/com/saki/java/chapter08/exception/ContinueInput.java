@@ -1,4 +1,4 @@
-package com.saki.java.chapter08;
+package com.saki.java.chapter08.exception;
 
 public class ContinueInput {
 
@@ -16,8 +16,6 @@ public class ContinueInput {
 		}
 		System.out.printf("thanx for your number %d ", number);
 		System.exit(0);
-		// TODO Auto-generated method stub
-
 	}
 
 }

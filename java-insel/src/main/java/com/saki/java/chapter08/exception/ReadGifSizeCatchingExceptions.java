@@ -1,4 +1,4 @@
-package com.saki.java.chapter08;
+package com.saki.java.chapter08.exception;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -8,6 +8,7 @@ public class ReadGifSizeCatchingExceptions {
 
 	public static void main(String[] args) {
 		RandomAccessFile f = null;
+
 		try {
 			f = new RandomAccessFile( "duke.git", "r");
 			f.seek(6);
