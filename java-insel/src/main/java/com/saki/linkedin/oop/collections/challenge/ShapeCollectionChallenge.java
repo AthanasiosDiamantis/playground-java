@@ -1,4 +1,4 @@
-package com.saki.linkedin.collections.challenge;
+package com.saki.linkedin.oop.collections.challenge;
 
 import java.awt.*;
 import java.util.Collection;
