@@ -1,0 +1,17 @@
+package com.saki.javainsel15.chapter06.game.v8;
+
+public class Player {
+
+    public String name;
+    public String item;
+
+    public Player(Player player) {
+        name = player.name.trim();
+        item = player.item.trim();
+    }
+
+    public Player(String name, String item) {
+        this.name = name.trim();
+        this.item = item.trim();
+    }
+}

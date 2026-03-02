@@ -1,0 +1,15 @@
+package com.saki.javainsel15.chapter07.game.vf;
+
+/**
+ * 
+ */
+public class GameObject {
+	
+	public String name;
+	
+	@Override
+	public String toString() {
+		return String.format("%s [ name = %s ] ", getClass().getSimpleName(), name);
+	}
+	
+}
