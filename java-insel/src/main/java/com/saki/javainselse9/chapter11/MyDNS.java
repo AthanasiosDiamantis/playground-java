@@ -2,7 +2,6 @@ package com.saki.javainselse9.chapter11;
 
 import java.io.IOException;
 import java.net.InetAddress;
-import java.net.UnknownHostException;
 
 public class MyDNS {
 
