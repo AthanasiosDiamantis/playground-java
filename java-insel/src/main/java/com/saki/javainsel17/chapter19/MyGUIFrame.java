@@ -14,6 +14,7 @@ public class MyGUIFrame extends JFrame {
     private JButton startButton;
     private JLabel timeToMsgLabel;
     private JLabel remainingMinLabel;
+    private JButton exitButton;
 
     private Timer timer;
     private long endTimeMillis;
@@ -23,6 +24,7 @@ public class MyGUIFrame extends JFrame {
      * Launch the application.
      */
     public static void main(String[] args) {
+        // this Method starts the MyGUIFrame in the special threadsafe SWING-Thread
         SwingUtilities.invokeLater(() -> {
             MyGUIFrame frame = new MyGUIFrame();
             frame.setVisible(true);
@@ -30,7 +32,7 @@ public class MyGUIFrame extends JFrame {
     }
 
     /**
-     * Create the application
+     * constructor creates the application
      */
     public MyGUIFrame() {
         initialize();
@@ -54,7 +56,7 @@ public class MyGUIFrame extends JFrame {
         minutesTextField.setColumns(10);
         minutesTextField.setText("1");
 
-        remainingLabel = new JLabel("");
+//        remainingLabel.;
 
         minutesSlider.addChangeListener(e -> {
             minutesTextField.setText(String.valueOf(minutesSlider.getValue()));
@@ -69,6 +71,7 @@ public class MyGUIFrame extends JFrame {
         });
 
         startButton.addActionListener(e -> startTimer());
+        exitButton.addActionListener(e ->  System.exit(0));
     }
 
     private void startTimer() {
