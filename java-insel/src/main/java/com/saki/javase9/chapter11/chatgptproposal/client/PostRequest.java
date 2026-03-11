@@ -1,4 +1,4 @@
-package com.saki.javainselse9.chapter11.chatgptproposal.client;
+package com.saki.javase9.chapter11.chatgptproposal.client;
 
 import java.io.*;
 import java.net.HttpURLConnection;

@@ -1,4 +1,4 @@
-package com.saki.javainselse9.chapter11;
+package com.saki.javase9.chapter11;
 
 import java.io.IOException;
 import java.net.InetAddress;

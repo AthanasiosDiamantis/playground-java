@@ -56,8 +56,6 @@ public class MyGUIFrame extends JFrame {
         minutesTextField.setColumns(10);
         minutesTextField.setText("1");
 
-//        remainingLabel.;
-
         minutesSlider.addChangeListener(e -> {
             minutesTextField.setText(String.valueOf(minutesSlider.getValue()));
         });

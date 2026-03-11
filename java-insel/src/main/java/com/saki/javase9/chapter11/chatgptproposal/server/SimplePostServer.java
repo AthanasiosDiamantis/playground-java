@@ -1,4 +1,4 @@
-package com.saki.javainselse9.chapter11.chatgptproposal.server;
+package com.saki.javase9.chapter11.chatgptproposal.server;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;

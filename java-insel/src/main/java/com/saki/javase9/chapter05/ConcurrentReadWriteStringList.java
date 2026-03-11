@@ -1,4 +1,4 @@
-package com.saki.javainselse9.chapter05;
+package com.saki.javase9.chapter05;
 
 import java.util.ArrayList;
 import java.util.List;

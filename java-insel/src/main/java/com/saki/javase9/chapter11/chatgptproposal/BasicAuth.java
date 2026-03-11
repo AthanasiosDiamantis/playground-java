@@ -1,4 +1,4 @@
-package com.saki.javainselse9.chapter11.chatgptproposal;
+package com.saki.javase9.chapter11.chatgptproposal;
 
 import java.io.IOException;
 import java.net.Authenticator;

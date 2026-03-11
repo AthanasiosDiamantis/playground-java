@@ -1,7 +1,6 @@
-package com.saki.javainselse9.chapter17;
+package com.saki.javase9.chapter17;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.Date;
 
 public class ClockApplication {
