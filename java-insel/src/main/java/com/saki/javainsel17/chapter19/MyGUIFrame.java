@@ -74,38 +74,52 @@ public class MyGUIFrame extends JFrame {
         exitButton.addActionListener(e ->  System.exit(0));
     }
 
+    /**
+     * initializes the timer and starts the timer
+     */
     private void startTimer() {
         int minutes = minutesSlider.getValue();
 
-
+        // in case the timer is not null and running
         if (timer != null && timer.isRunning()) {
             timer.stop();
         }
 
+        // converts the entered minutes to milliseconds
         endTimeMillis = System.currentTimeMillis() + minutes * 60 * 1000L;
 
+        // blocks use of functions while time is running
         startButton.setEnabled(false);
         minutesSlider.setEnabled(false);
         minutesTextField.setEnabled(false);
 
+        // creates a Timer with following parameters:
+        // 1. the initial and in between delay of the timer
+        // 2. an actionListener using updateTimer() every delay of parameter 1
         timer = new Timer(1000, e -> updateTimer());
         timer.setInitialDelay(0);
         timer.start();
     }
 
+    /**
+     * responsible for timer countdown
+     */
     private void updateTimer() {
         long remainingMillis = endTimeMillis - System.currentTimeMillis();
 
+        // stops timer at 0 or less
         if (remainingMillis <= 0) {
             timer.stop();
             remainingMinLabel.setText("0 Sekunden");
 
+            // unblocks the functionality of these methods
             startButton.setEnabled(true);
             minutesSlider.setEnabled(true);
             minutesTextField.setEnabled(true);
 
-
+            // creates a simple beep sound of the implemented toolkit
             Toolkit.getDefaultToolkit().beep();
+            // opens a dialoge box at the end of countdown
             JOptionPane.showMessageDialog(this, "BING!");
             return;
         }
@@ -114,6 +128,7 @@ public class MyGUIFrame extends JFrame {
         long minutes = totalSeconds / 60;
         long seconds = totalSeconds % 60;
 
+        // puts this text into this JLabel
         remainingMinLabel.setText(minutes + " Min " + seconds + " Sek");
 
     }
