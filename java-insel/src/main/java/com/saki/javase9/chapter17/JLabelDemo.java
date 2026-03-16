@@ -15,7 +15,6 @@ public class JLabelDemo {
         frame.setVisible(true);
         Thread.sleep(5000);
         l.setText("new Text after 5 Seconds in the box, while box will expand to text size!");
-        frame.repaint();
 
     }
 }

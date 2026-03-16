@@ -1,0 +1,30 @@
+package com.saki.javase9.chapter17.swing;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+
+public class JButtonAction {
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+
+        Action exitAction = new AbstractAction("Ende") {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        };
+
+        JButton button2 = new JButton(exitAction);
+        frame.add(button2);
+
+        frame.pack();
+        frame.setVisible(true);
+
+    }
+}
