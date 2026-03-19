@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class FirstSqlAccess {
+public class FirstSqlAccessSakiDemo {
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/javademo?allowPublicKeyRetrieval=true&useSSL=false";
